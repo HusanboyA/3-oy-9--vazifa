@@ -1,0 +1,40 @@
+section{
+    h1{
+        font-family: $font-family;
+        font-size: 61px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        color: $textcolor;
+    }
+
+    p{
+        font-family: $font-family;
+        color: $textcolor;
+        font-size: 19.3px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    button{
+        @extend %button;
+        margin: 50px auto 0;
+    }
+
+    
+
+    .bg_img{
+        position: relative;
+        top: -100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    background:
+                url('../image/bg_image1.png') 233px 104px / 212px 212px no-repeat,
+                url('../image/bg_image2.png') right 141px top 0 / 212px 212px no-repeat,
+                url('../image/bg.png') bottom / contain no-repeat;
+}
+

@@ -1,0 +1,88 @@
+$bgcolor: #EC6C21;
+$color: #fff;
+$font-family: Inter;
+$textcolor: #002959;
+$transition: all .7s linear;
+
+%button{
+    background-color: $bgcolor;
+    color: $color;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px; 
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-decoration: none;
+    border: 1px solid $color;
+    transition: $transition;
+    cursor: pointer;
+    &:hover{
+        background-color: #f22906;
+    }
+
+    .img{
+        width: 24px;
+        height: 24px;
+    } 
+}
+
+
+
+
+header{
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_container{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        list-style-type: none;
+
+        a, %menu{
+            color: $textcolor;
+            font-family: $font-family;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.36px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: $transition;
+             
+        }
+
+        a:hover{
+            color: $bgcolor
+        }
+
+        select{
+            @extend %menu;
+            border: none;
+
+        }
+    }
+
+    .header_button{
+        @extend %button;
+        
+    }
+
+    
+
+} 
+
+
+
